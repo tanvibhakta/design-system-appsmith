@@ -16,7 +16,7 @@
     "test-storybook": "test-storybook",
     "test-storybook:ci": "concurrently -k -s first -n \"SB,TEST\" -c \"magenta,blue\" \"yarn build-storybook --quiet && npx http-server storybook-static --port 6006 --silent\" \"wait-on tcp:6006 && yarn test-storybook\"",
     "test:jest": "jest",
-    "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN --build-script-name build-storybook --exit-zero-on-changes"
+    "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes"
   },
   "author": "",
   "license": "ISC",
