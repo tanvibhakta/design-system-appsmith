@@ -1,14 +1,14 @@
 # .github/workflows/chromatic.yml
 
 # Workflow name
-name: 'Chromatic'
+name: Chromatic
 
 # Event for the workflow
 on: push
 
 defaults:
   run:
-    working-directory: ./packages/design-system
+    working-directory: packages/design-system
 
 # List of jobs
 jobs:
