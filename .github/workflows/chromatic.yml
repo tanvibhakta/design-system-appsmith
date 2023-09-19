@@ -18,6 +18,9 @@ jobs:
     # Job steps
     steps:
       - uses: actions/checkout@v1
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
       - name: Find directory
         run: echo ${{ github.workspace }}
       - name: Install dependencies
